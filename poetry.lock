@@ -170,6 +170,20 @@ files = [
 setuptools = ">=41.0"
 
 [[package]]
+name = "serverless-wsgi"
+version = "3.0.3"
+description = "Amazon AWS API Gateway WSGI wrapper"
+optional = false
+python-versions = ">3.6"
+files = [
+    {file = "serverless-wsgi-3.0.3.tar.gz", hash = "sha256:5b526aa698d9d9332b53ff34d9f978b579f439f8abd530ceb2d183bb1a7d0820"},
+    {file = "serverless_wsgi-3.0.3-py2.py3-none-any.whl", hash = "sha256:6445fc00fb36654ab7546454da9d4ea450e1ff5ae144d1f99d8290ef96831dda"},
+]
+
+[package.dependencies]
+werkzeug = ">2"
+
+[[package]]
 name = "setuptools"
 version = "69.5.1"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
@@ -205,4 +219,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10.0,<3.12"
-content-hash = "c7303ae4598f3f9c33ad93ede2589702a63e037055ab1ecfef13d8ff2f485160"
+content-hash = "b2cafeaafb333084ddb313061cf64afc0c637e03bb09967a8134d582df574534"

@@ -8,6 +8,7 @@ authors = ["Sasha Baranov s8522391@providenceschools.org"]
 python = ">=3.10.0,<3.12"
 readchar = "^4.0.6"
 flask = "^3.0.3"
+serverless-wsgi = "^3.0.3"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md

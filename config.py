@@ -1,5 +1,5 @@
-import os
 from flask import Flask, render_template, send_file
+from serverless_wsgi import handle_request
 
 app = Flask(__name__)
 
@@ -12,12 +12,12 @@ def generate_seats():
     user = input('What classroom are you?\n')
     if user == '1':
         os.system('python DeMaria.py')
-        return send_file('templates/seatsDM.md')
+        return send_file('seatsDM.md')
     elif user == '2':
         os.system('python MarquesLeach.py')
-        return send_file('templates/seatsML.md')
+        return send_file('seatsML.md')
     else:
         return 'Not all teachers are supported yet.'
 
-if __name__ == '__main__':
-    app.run(debug=True)
+def handler(event, context):
+    return handle_request(app, event, context)
