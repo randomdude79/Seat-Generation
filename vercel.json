@@ -1,7 +1,10 @@
 {
   "functions": {
-    "api/config": {
-      "runtime": "vercel-python@0.24.0"
+    "api/config.py": {
+      "runtime": "vercel-python@0.5.0"
     }
-  }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "api/config.py" }
+  ]
 }
