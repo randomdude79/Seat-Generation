@@ -1,1 +1,0 @@
-{{ open("seatsML.md").read() }}

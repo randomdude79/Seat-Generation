@@ -1,6 +1,7 @@
 {
   "functions": {
-    "config": {
+    "api/config": {
+      "handler": "api/config.app",
       "runtime": "vercel-python@0.24.0"
     }
   }
